@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:activity="com.iembsys.admin.nimbumirchi.customer.TransporterListFragment">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:divider="@null"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:text="PLACE ORDER"/>
+
+</LinearLayout>

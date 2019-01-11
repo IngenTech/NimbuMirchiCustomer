@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/distance_im"
+            style="@style/TextViewAppearance.MediumCondensed"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:text="Vehical IMEI:" />
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/halt_imei"
+            style="@style/TextViewAppearance.MediumCondensed"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:text="UP-78 BR4022"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/distance_vn"
+            style="@style/TextViewAppearance.MediumCondensed"
+            android:textAllCaps="true"
+            android:text="Vehical Name:" />
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/halt_vehicalName"
+            style="@style/TextViewAppearance.MediumCondensed"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:text="Narayan Transport" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/haltList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+</LinearLayout>

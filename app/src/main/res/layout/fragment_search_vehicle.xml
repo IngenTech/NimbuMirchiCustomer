@@ -1,0 +1,245 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:activity="com.iembsys.admin.nimbumirchi.customer.SearchVehicleFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/layout_background"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="From Location *" />
+
+            <AutoCompleteTextView
+                android:id="@+id/fromLocationAutocompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:background="@drawable/design_layouts"
+                android:padding="5dp"
+                android:completionThreshold="1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="To Location *" />
+
+            <AutoCompleteTextView
+                android:id="@+id/toLocationAutocompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:background="@drawable/design_layouts"
+                android:padding="5dp"
+                android:completionThreshold="1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Trip Date *"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RelativeLayout
+                android:id="@+id/inputLayoutCustomerName"
+                android:layout_width="match_parent"
+                android:background="@drawable/design_layouts"
+                android:padding="5dp"
+                android:layout_height="35dp">
+
+                <EditText
+                    android:id="@+id/edtTxtDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Date"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="@color/text_gray"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:paddingLeft="5dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Select Category *"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Spinner
+                android:id="@+id/selectCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/design_layouts"
+                android:paddingLeft="5dp"
+                android:transitionGroup="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Item *"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RelativeLayout
+                android:id="@+id/inputLayoutArrivalDate"
+                android:layout_width="match_parent"
+                android:background="@drawable/design_layouts"
+                android:padding="5dp"
+                android:layout_height="35dp">
+
+                <EditText
+                    android:id="@+id/edtTxtItem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="item"
+                    android:textColorHint="@color/text_gray"
+                    android:layout_marginBottom="1dp"
+                    android:layout_centerVertical="true"
+                    android:maxLength="12"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:paddingLeft="5dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Capacity (tones) *"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RelativeLayout
+                android:id="@+id/inputLayoutDriverName"
+                android:layout_width="match_parent"
+                android:background="@drawable/design_layouts"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp">
+
+                <EditText
+                    android:id="@+id/edtTxtCapacity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Capacity"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:layout_marginBottom="1dp"
+                   android:layout_centerVertical="true"
+                    android:textColorHint="@color/text_gray"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Preference"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxDoorClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Door Close" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxRefrigerated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Refrigerated" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Number Of Vehicles *"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RelativeLayout
+                android:id="@+id/inputLayoutDriverMobileNo"
+                android:layout_width="match_parent"
+                android:background="@drawable/design_layouts"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp">
+
+                <EditText
+                    android:id="@+id/edtTxtNoOfVehicles"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No of Vehicles"
+                    android:inputType="number"
+                    android:layout_marginBottom="1dp"
+                    android:textColorHint="@color/text_gray"
+                    android:layout_centerVertical="true"
+                    android:maxLength="3"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSearchTransporter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_background"
+                android:text="Search Transporter"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

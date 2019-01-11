@@ -1,0 +1,4 @@
+F:\NimbooMirchi\NimbuMirchiCustomer\NimbuMirchiCustomer\appStuf\NimbuMirchiCustomer.jks
+pass : 11111111
+alias : nimboo_mirchi
+First Name and Last Name : Nimboo Mirchi

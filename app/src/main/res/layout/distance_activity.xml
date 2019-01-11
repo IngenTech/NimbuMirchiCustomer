@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/distance_im"
+            style="@style/TextViewAppearance.ThinLight"
+            android:layout_centerVertical="true"
+            android:text="Vehical IMEI:"
+            android:textAllCaps="true" />
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/distance_imei"
+            style="@style/TextViewAppearance.MediumCondensed"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:text="UP-78 BR4022" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp">
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/distance_vn"
+            style="@style/TextViewAppearance.ThinLight"
+            android:text="Vehical Name:"
+            android:textAllCaps="true" />
+
+        <com.iembsys.admin.nimbumirchi.customer.util.RobotoTextView
+            android:id="@+id/distance_vehicalName"
+            style="@style/TextViewAppearance.ThinLight"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:text="Narayan Transport" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:padding="5dp">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/distanceList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D84315</color>
+    <color name="colorPrimaryDark">#BF360C</color>
+    <color name="colorAccent">#FF6E40</color>
+
+    <color name="blur">#bae7e7e6</color>
+    <color name="iron">#CCCCCC</color>
+
+    <color name="main_color_grey_600">#5b4a43</color>
+
+    <color name="Gray">#ebebeb</color>
+    <color name="White">#FFFFFF</color>
+
+    <color name="blue_gray">#607D8B</color>
+    <color name="text_gray">#5e5e5e</color>
+    <color name="aluminum">#999999</color>
+    <color name="orderbtn_color">#f5604d</color>
+
+</resources>

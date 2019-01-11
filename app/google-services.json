@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "14646267791",
+    "firebase_url": "https://nimbumircheecustomer.firebaseio.com",
+    "project_id": "nimbumircheecustomer",
+    "storage_bucket": "nimbumircheecustomer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14646267791:android:fe9c4c18ef9a1ccb",
+        "android_client_info": {
+          "package_name": "com.iembsys.admin.nimbumirchi.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14646267791-5b16g8cg1np2dt4hkuicoe27s8qg7rka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iembsys.admin.nimbumirchi.customer",
+            "certificate_hash": "dd18175ab784e681a466f61dc3579288a7816c14"
+          }
+        },
+        {
+          "client_id": "14646267791-9s0qeprcqsojo0lr7vcbsurk1a544nci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF6fAW7yGqt9xcTGBBAFE-FMFqiLOOk6s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14646267791-9s0qeprcqsojo0lr7vcbsurk1a544nci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

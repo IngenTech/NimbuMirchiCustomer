@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iembsys.admin.nimbumirchi.customer">
+
+    <permission
+        android:name="com.iembsys.admin.nimbumirchi.customer.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.iembsys.admin.nimbumirchi.customer.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name=".NimbuMirchiApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/map_debug_key" />
+
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SignupActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <activity android:name=".OtpVerificationActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:label="@string/otp_Verify"/>
+
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/EditProfileActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+        <activity android:name=".UploadDocumentActivity"
+            android:label="@string/upload_document"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"></activity>
+
+        <activity android:name=".ViewDocumentActivity"
+            android:icon="@drawable/back_btn"
+            android:label="@string/view_document"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"></activity>
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="Change Your Password"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+        <activity
+            android:name=".orders_action_activity.TravelReportActivity"
+            android:label="Travel Report"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+        <activity
+            android:name=".orders_action_activity.TrackMapActivity"
+            android:label="Track Map"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+        <activity
+            android:name=".DetailActivity"
+            android:label="Detail Activity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+
+        <activity
+        android:name=".orders_action_activity.LiveMapActivity"
+        android:label="Live Map"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        android:configChanges="orientation|smallestScreenSize"/>
+
+
+        <activity
+            android:name=".orders_action_activity.Navigation"
+            android:label="Navigation"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+
+        <activity
+            android:name=".orders_action_activity.AlertActivity"
+            android:label="Alert"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+        <activity
+            android:name=".orders_action_activity.DistanceReportActivity"
+            android:label="Distance Report"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+        <activity
+            android:name=".orders_action_activity.HaltReportActivity"
+            android:label="Halt Report"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|smallestScreenSize"/>
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>
